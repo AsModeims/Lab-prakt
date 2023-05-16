@@ -1,0 +1,32 @@
+<head>
+<style>
+h1
+{color:red; front-size:36pt;}
+</style>
+<script>
+i=0;
+function f()
+{
+r1=document.getElementById('e1')
+r2=document.getElementById('e2')
+if(i==0)
+{
+r1.style.color='green';
+r2.value='izmetitb na krasnij';
+i=1;
+}
+else
+{
+r1.style.color='red';r2.value='izmetitb na green';
+i=0;
+}
+}
+</script>
+</head>
+<body>
+<h1 id='e1'> Z </h1>
+<form>
+<input type="button" id='e2' value="izmetitb na green"
+onClick="f();">
+</form>
+</body>
