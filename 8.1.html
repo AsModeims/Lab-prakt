@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function changeFont() {
+var paragraphs = document.getElementsByTagName('p'); 
+var button = document.getElementById('button');
+
+if (paragraphs[0].style.fontFamily === 'Arial') { 
+for (var i = 0; i < paragraphs.length; i++) {
+paragraphs[i].style.fontFamily = 'Times New Roman';
+}
+button.innerHTML = 'Arial';
+} else {
+for (var i = 0; i < paragraphs.length; i++) { 
+paragraphs[i].style.fontFamily = 'Arial';
+}
+button.innerHTML = 'Times New Roman';
+}
+}
+</script>
+</head>
+<body>
+<p>Абзац 1</p>
+<p>Абзац 2</p>
+<p>Абзац 3</p>
+<button id="button" onclick="changeFont()">Arial</button>
+</body>
+</html>

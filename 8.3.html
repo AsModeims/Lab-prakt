@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function calculateSum() {
+var input1 = parseInt(document.getElementById('input1').value); 
+var input2 = parseInt(document.getElementById('input2').value); 
+var input3 = parseInt(document.getElementById('input3').value); 
+var input4 = parseInt(document.getElementById('input4').value);
+
+var sum = input1 + input2 + input3 + input4;
+
+
+document.getElementById('result').innerHTML = 'Сумма: ' + sum;
+}
+</script>
+</head>
+<body>
+<input type="text" id="input1">
+<input type="text" id="input2">
+<input type="text" id="input3">
+<input type="text" id="input4">
+<button onclick="calculateSum()">Посчитать сумму</button>
+<p id="result"></p>
+</body>
+</html>

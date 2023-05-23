@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<button id="but">Кнопка</button>
+<h1>ахахахха я иду в магазин 1 </h1>
+<h2>ахахахха я в магазине 2 </h2>
+<h3>ахахахха я иду из магазина 3 </h3>
+ 
+<script type="text/javascript">
+but.onclick = function() {
+  const text = prompt('Введите текст');
+  document.querySelectorAll('h1').forEach(header => {
+    header.innerText = text;
+    header.style.fontWeight = '1px solid black';
+    header.style.textDecoration= 'underline'
+  });
+}
+</script>
+</body>
+</html>
